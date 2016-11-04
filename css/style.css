@@ -45,11 +45,11 @@ font-family: 'Roboto', sans-serif;
 .navbar-nav > li > a.btn:focus,
 .navbar-nav > li > a.btn:hover,
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus, .nav>li>a#login:focus,  .nav>li>a#login:hover,  {
 	background-color: rgba(200, 30, 28,0.8);
 	border-color: rgba(200, 30, 28,0.8);
 }
-.nav>li>a:focus, .nav>li>a#login:focus,  .nav>li>a#login:hover, 
+.nav>li>a:focus, 
 .nav>li>a:hover {
 	background: #fff;
 }
