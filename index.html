@@ -14,6 +14,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 
+<!--	slick Slider -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -176,11 +180,149 @@ MAX INTERNATIONAL Migration agency.
 	</div>
 	</section>
 	
-	
+<!--	Happy Client -->
+	<section class="content testimonials">
+	<div class="container">
+		<h4 class="title text-center">Happy clients</h4>
+		<div class="row slick-carousel">
+		<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-1.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Thank you so much for making this visa possible. Max International have been truly helpful and I would like to commend and thank so much Manvinder who has been very helpful and dedicated to her work.</p>
+				<h5 class="author-title">Gurjeet Singh</h5>
+				</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-2.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Their prompt and professional consultation with the Australian Consulate has made the immigration process a lot easier for us. I would highly recommend Max International and the excellent service they provide</p>
+				<h5 class="author-title">tina</h5>
+				</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-1.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Thank you so much for making this visa possible. Max International have been truly helpful and I would like to commend and thank so much Manvinder who has been very helpful and dedicated to her work.</p>
+				<h5 class="author-title">Gurjeet Singh</h5>
+				</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-2.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Their prompt and professional consultation with the Australian Consulate has made the immigration process a lot easier for us. I would highly recommend Max International and the excellent service they provide</p>
+				<h5 class="author-title">tina</h5>
+				</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-1.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Thank you so much for making this visa possible. Max International have been truly helpful and I would like to commend and thank so much Manvinder who has been very helpful and dedicated to her work.</p>
+				<h5 class="author-title">Gurjeet Singh</h5>
+				</div>
+</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="img/t-2.jpg" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><img src="img/q-1.png"></h4>
+<p>Their prompt and professional consultation with the Australian Consulate has made the immigration process a lot easier for us. I would highly recommend Max International and the excellent service they provide</p>
+				<h5 class="author-title">tina</h5>
+				</div>
+</div>
+			</div>
+		</div>
+		</div>
+	</section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--	slick slider  -->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		
+		$('.slick-carousel').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+			autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		  dots: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	});
+	
+	</script>
 </body>
 
 </html>
