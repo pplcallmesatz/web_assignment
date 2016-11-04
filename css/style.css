@@ -49,18 +49,22 @@ font-family: 'Roboto', sans-serif;
 	background-color: rgba(200, 30, 28,0.8);
 	border-color: rgba(200, 30, 28,0.8);
 }
-.nav>li>a:focus, 
+.nav>li>a:focus, .nav>li>a#login:focus,  .nav>li>a#login:hover, 
 .nav>li>a:hover {
 	background: #fff;
 }
 /*Button*/
-.btn, .login {
+.btn, .nav>li>a#login {
 	padding: 5px 20px;
 }
-.btn-primary , .login {
+.btn-primary , .nav>li>a#login {
 	background-color: #c81e1c;
 	color: #fff;
 	border-color: #c81e1c;
+}
+#login {
+	margin-top: 9px;
+	text-align: center;
 }
 
 /*General Styles*/
