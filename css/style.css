@@ -466,3 +466,12 @@ margin-right: auto;
 		display: none;
 	}
 }
+@media (max-width: 500px){
+	.intro-box h2 {
+		font-size: 1.3em;
+	}
+	.intro-box p {
+		    font-size: 0.9em;
+    font-weight: 300;
+	}
+}
