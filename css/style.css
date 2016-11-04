@@ -1,0 +1,127 @@
+body {
+font-family: 'Roboto', sans-serif;
+	padding-top: 80px;
+}
+
+
+
+/* Bootstrap Override */
+
+/*NavBar*/
+.navbar-brand img {
+	margin-top: 5px;
+	height: 50px;
+}
+.navbar {
+/*	height: 85px;*/
+	background-color: #fff;
+}
+.navbar-nav > li >a {
+/*	color: #414242;*/
+	text-transform: uppercase;
+}
+.navbar-nav > li.active >a {
+	color: #d21e1e;
+}
+.nav-contact img {
+	width: 20px;
+	margin-right: 5px;
+}
+.nav-contact [class*="col-"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(40,40,40,.3);
+}
+.nav-contact [class*="col-"]:last-child {
+	padding-top: 9px;
+}
+.navbar-nav > li > a.btn {
+	padding: 5px 25px;
+	text-transform: capitalize;
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.navbar-nav > li > a.btn:focus,
+.navbar-nav > li > a.btn:hover {
+	background-color: rgba(200, 30, 28,0.8);
+	border-color: rgba(200, 30, 28,0.8);
+}
+.nav>li>a:focus, 
+.nav>li>a:hover {
+	background: #fff;
+}
+/*Button*/
+.btn-primary {
+	background-color: #c81e1c;
+	color: #fff;
+	border-color: #c81e1c;
+}
+
+.btn-primary:hover {
+	
+}
+
+
+/*General Styles*/
+a:hover {
+	text-decoration: none !important;
+	color: #d21e1e;
+}
+a {
+	color: #414242;
+}
+.b-r {
+	border-right: 1px solid rgba(40,40,40,.30);
+}
+
+@media (max-width: 767px) {
+	.nav-contact img  {
+		margin-left: 0px !important;
+	}
+}
+@media (max-width: 991px) {
+	.navbar-header,
+	.navbar-nav>li,
+	.navbar-collapse.pull-right{
+		float: none !important;
+	}
+	
+	.nav-contact > li .b-r,
+	.nav-contact [class*="col-"]{
+		border: none !important;
+	}
+	.navbar-collapse.collapse {
+    display: none !important;
+}
+	.navbar-collapse.collapse.in,
+	.navbar-toggle {
+    display: block !important;
+}
+	.navbar-collapse .nav-contact .text-right {
+		text-align: left !important;
+	}
+	.navbar-brand img  {
+		height: 40px;
+		margin-top: 0px;
+	}
+	.navbar-header {
+		height: 70px;
+		background: #fff;
+	}
+	.navbar-toggle {
+    border: 1px solid #333;
+		margin-top: 17px;
+		margin-bottom: 17px;
+}
+	.icon-bar {
+		background: #333;
+	}
+	.nav-contact img {
+		margin-left: 15px;
+	}
+}
+/*
+@media (min-width: 992px)
+.navbar-toggle {
+    display: none;
+}*/
