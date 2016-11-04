@@ -54,26 +54,27 @@
 					</div>
 				</div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#contact">visas</a></li>
-                    <li><a href="#contact">Testimonials</a></li>
-                    <li><a href="#contact">Newsletter</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="btn btn-primary">login</a></li>
+                    <li class="active"><a class="click" href="#home">Home</a></li>
+                    <li><a class="click" href="#about">About us</a></li>
+                    <li><a class="click" href="#visa">visas</a></li>
+                    <li><a class="click" href="#testimonial">Testimonials</a></li>
+                    <li><a class="click" href="#news">Newsletter</a></li>
+                    <li><a class="click" href="#contact">Contact</a></li>
+                    <li><a class="" href="#" class="btn btn-primary login" id="login">login</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
 <!-- Hero Section -->
- <section class="bg-1 container-fluid">
+ <section class="bg-1 container-fluid" id="home">
 	 <div class="row">
 	 <div class="col-lg-8 col-md-7">
 		 <div class="intro-box">
 	<h2 class="">migration agent</h2>
 	 <p>Max International, a reputed Migration consultancy and agency, was established in 2009 with the intention of providing genuine, reliable and cost effective service and support to people who wish to make Australia their home. 
            </p>
+			  <div class="strip-line"></div>
 		 </div>
 		 </div>
 		 <div class="col-lg-4 col-md-5">
@@ -110,11 +111,11 @@
 			 </div>
 		 </div>
 	 </div>
-	 
+	
 	</section>
     <!-- /.container -->
 <!--About US-->
-<section class="content about-us">
+<section class="content about-us" id="about">
 	<div class="container text-center">
 		<div class="content-box">
 	<h4 class="title">ABOUt us</h4>
@@ -127,13 +128,14 @@ MAX INTERNATIONAL Migration agency.
 		</p>
 			<div class="text-center">
   <button type="submit" class="btn btn-primary uppercase">read more</button></div>
+		 <div class="strip-line"></div>
 		</div>
 	</div>
 	</section>
 	
 	
-<!--About US-->
-<section class="content visa-service">
+<!--visa-->
+<section class="content visa-service" id="visa">
 	<div class="container text-center">
 		<h4 class="title">visa services</h4>
 		<div class="row">
@@ -184,7 +186,7 @@ MAX INTERNATIONAL Migration agency.
 	</section>
 	
 <!--	Happy Client -->
-	<section class="content testimonials">
+	<section class="content testimonials" id="testimonial">
 	<div class="container">
 		<h4 class="title text-center">Happy clients</h4>
 		<div class="row slick-carousel">
@@ -277,7 +279,7 @@ MAX INTERNATIONAL Migration agency.
 	</section>
 <!--	footer  -->
 	
-	<section class="content footer">
+	<section class="content footer" id="news">
 	<div class="container">
 		<div class="row">
 		<div class="col-lg-3 col-md-3 col-sm-6 logo-content m-b-40">
@@ -337,7 +339,7 @@ MAX INTERNATIONAL Migration agency.
 			</div>
 		</div>
 	</section>
-	<div class="footer bottom">
+	<div class="footer bottom" id="contact">
 		<div class="container">
 	<p class="left">&copy; 2007 - 2016 Max International  All rights reserved.</p>
 	<p class="right">Design by Kush Infosystems Inc.</p>
@@ -352,6 +354,27 @@ MAX INTERNATIONAL Migration agency.
 
 	<script>
 	$(document).ready(function(){
+		
+		
+		
+				
+ $('.click').click(function(e){
+   // prevent default action
+   e.preventDefault();
+  
+   // get id of target div (placed in href attribute of anchor element)
+   // and pass it to the scrollToElement function
+    // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
+   scrollToElement( $(this).attr('href'), 2000 );
+});
+
+var scrollToElement = function(el, ms){
+    var speed = (ms) ? ms : 600;
+    $('html,body').animate({
+        scrollTop: $(el).offset().top  - 90
+    }, speed);
+}
+		
 		
 		$('.slick-carousel').slick({
   dots: true,
