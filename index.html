@@ -420,32 +420,7 @@ var scrollToElement = function(el, ms){
 	});
 	
 	</script>
-	<script>
-(function (d,h,w) {
-  var convertfox = w.convertfox = w.convertfox || [];
-  convertfox.methods = [ 'trackPageView', 'identify', 'track', 'setAppId' ];
-  convertfox.factory = function(method){
-    return function(){
-      var args = Array.prototype.slice.call(arguments);
-      args.unshift(method);
-      convertfox.push(args);
-      return convertfox;
-    };
-  };
-  for (var i = 0; i < convertfox.methods.length; i++) {
-    var key = convertfox.methods[i];
-    convertfox[key] = convertfox.factory(key);
-  }
-
-  s=d.createElement('script');
-  s.src="https://convertfox-testing.s3.amazonaws.com/testing.convertfox.min.js";
-  s.async = true;
-  e=d.getElementsByTagName(h)[0];
-  e.appendChild(s);
-  s.addEventListener('load', function (e) { }, false);
-  convertfox.setAppId("4dux7qtv"); convertfox.trackPageView();
-})(document, 'head', window);
-</script>
+	
 
 </body>
 
